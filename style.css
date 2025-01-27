@@ -1,0 +1,156 @@
+h1 {
+    color: rgb(240, 76, 5);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+header .logo {
+    font-size: 25px;
+}
+header .logo span {
+    color: #fc4609;
+}
+header .menu a {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    color: #f47e08;
+    transition: 0.5s;
+}
+header .menu a:before {
+    position: absolute;
+    top: -2px;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #f99405;
+    transition: 0.5s;
+}
+header .menu a:hover:before {
+    width: 100%;
+}
+header .menu a:hover {
+    color: #f55e06;
+}
+/* home */
+.home {
+    height: calc(100vh - 55px);
+    background: url("images/Skoda\ Kodiaq\ RS\ \(2025\).jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
+    padding-bottom: 50px;
+}
+.home-infos {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 50px;
+    animation: anime 2s linear;
+}
+/* animation home-infos */
+@keyframes anime {
+    from{
+        transform: translateX(-600px);
+    }
+}
+.home-infos h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-infos p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.home-infos a {
+    text-decoration: 0;
+    border: 2px solid #f43805;
+    color: #0b0b0b;
+    border-radius: 6px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.home-infos a:hover {
+    background-color: #4307fa;
+    color: #fff;
+    letter-spacing: 1px;
+}
+/* Nos Voitures */
+.Nos Voitures{
+    padding: 0 10%;
+}
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+.sub-title {
+    text-align: center;
+    color: #0934e2;
+    margin: 20px 0;
+}
+.list-Nos Voitures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.list-Nos Voitures .box {
+    padding: 30px;
+    background-color: #f3fbfa;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.list-Nos Voitures .box h1 {
+    text-transform: uppercase;
+    color: #f2de93;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.list-Nos Voitures .box p {
+    font-size: 16px;
+}
+.list-Nos Voitures .box:hover{
+    background-color: #f2de93;
+} 
+.list-Nos Voitures .box:hover h1 {
+    color: #fff;
+}
+.list-Nos Voitures .box:hover p {
+    color: #333;
+}
+/* banner */
+.banner {
+    height: 70vh;
+    background: url("images/2020\ Chevy\ Bolt\ EV_\ Part\ 1_\ First\ Driving\ Impressions.jpg");
+    background-position: center;
+    background-size: cover
+}
+
+
+
+
+
+
+
+
+
+
